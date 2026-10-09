@@ -1,0 +1,5 @@
+@import "tailwindcss";
+div >ul >li >img{
+  height: 150px;
+  width: 300x;
+}

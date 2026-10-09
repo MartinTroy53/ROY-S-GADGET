@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roy Gadgets</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome Icons -->
+    <link 
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="bg-white text-gray-900">
+
+<!-- NAVBAR -->
+<header class="w-full px-0 py-6 flex items-center justify-between">
+
+<!-- Mobile Menu -->
+<div class="relative md:hidden">
+
+    <!-- Menu Icon -->
+    <button onclick="toggleMenu()"
+        class="flex items-center justify-center p-2">
+        <img src="Images/menu.png"
+             alt="Menu"
+             class="w-7 h-7 object-contain">
+    </button>
+
+    <!-- Dropdown Menu -->
+    <nav id="mobileMenu"
+        class="hidden absolute left-0 top-full mt-2
+        w-56 bg-white rounded-xl shadow-lg
+        border border-gray-200 z-50 overflow-hidden">
+
+        <a href="login.html? message=Please%20sign%20in%20to%20access%20this%20feature."
+           class="block px-5 py-3 text-gray-700
+           text-sm font-medium hover:bg-blue-50
+           hover:text-blue-600">
+            iPhones
+        </a>
+
+        <a href="login.html? message=Please%20sign%20in%20to%20access%20this%20feature."
+           class="block px-5 py-3 text-gray-700
+           text-sm font-medium hover:bg-blue-50
+           hover:text-blue-600">
+            Androids
+        </a>
+
+        <a href="login.html? message=Please%20sign%20in%20to%20access%20this%20feature."
+           class="block px-5 py-3 text-gray-700
+           text-sm font-medium hover:bg-blue-50
+           hover:text-blue-600">
+            Accessories
+        </a>
+
+        <a href="login.html? message=Please%20sign%20in%20to%20access%20this%20feature."
+           class="block px-5 py-3 text-gray-700
+           text-sm font-medium hover:bg-blue-50
+           hover:text-blue-600">
+            Laptops
+        </a>
+
+        <a href="login.html? message=Please%20sign%20in%20to%20access%20this%20feature."
+           class="block px-5 py-3 text-gray-700
+           text-sm font-medium hover:bg-blue-50
+           hover:text-blue-600">
+            Smart Watches
+        </a>
+
+        <a href="login.html? message=Please%20sign%20in%20to%20access%20this%20feature."
+           class="block px-5 py-3 text-gray-700
+           text-sm font-medium hover:bg-blue-50
+           hover:text-blue-600">
+            Chargers
+        </a>
+
+        <a href="login.html? message=Please%20sign%20in%20to%20access%20this%20feature."
+           class="block px-5 py-3 text-gray-700
+           text-sm font-medium hover:bg-blue-50
+           hover:text-blue-600">
+            Headphones &amp; Speakers
+        </a>
+
+    </nav>
+</div>
+
+<script>
+    function toggleMenu() {
+        document.getElementById("mobileMenu")
+            .classList.toggle("hidden");
+    }
+</script>
+
+    <!-- Logo -->
+    <h1 class="text-3xl font-bold">
+        Roy <span class="text-blue-600">Gadgets</span>
+    </h1>
+
+
+    <!-- Search -->
+    <div class="hidden md:flex items-center bg-blue-100 rounded-full px-5 py-3 w-96">
+        <i class="fa fa-search text-gray-400"></i>
+        <input 
+        type="text" 
+        placeholder="Search gadgets..."
+        class="bg-transparent outline-none ml-3 w-full">
+    </div>
+
+
+    <!-- Menu -->
+    <nav class="hidden lg:flex gap-8 text-gray-600">
+
+        <a href="login.html? message=Please%20sign%20in%20to%20access%20this%20feature." class="hover:text-black">
+            Apple
+        </a>
+
+        <a href="login.html? message=Pleases%20sign%20in%20to%20access%20this%20feature." class="hover:text-black">
+            Androids
+        </a>
+
+        <a href="login.html? message=Please%20sign%20in%20to%20access%20this%20feature." class="hover:text-black">
+            Accessories
+        </a>
+
+        <a href="login.html? message=Please%20sign%20in%20to%20access%20this%20feature." class="hover:text-black">
+            Laptops
+        </a>
+
+    </nav>
+
+
+    <!-- Buttons -->
+    <div class="flex gap-4">
+
+        <a href="signup.html" class="bg-gray-200 text-gray-800 rounded-full px-6 py-3 hover:bg-black hover:text-white transition">
+            Sign up
+        </a>
+
+
+       <a href="login.html" class="bg-black px-6 py-3 rounded-full text-white hover:bg-gray-200 hover:text-black transition">
+          Login
+       </a>
+
+    </div>
+
+</header>
+
+
+
+<!-- HERO SECTION -->
+
+<section class="text-center mt-20 px-5">
+
+        <!-- Roy Gadgets Logo -->
+        <img
+            src="Images/Roy.jpg"
+            alt="Roy Gadgets Logo"
+            class="w-40 h-40 mx-auto rounded-full object-cover mb-5"
+        >
+
+
+    <h2 class="text-5xl md:text-6xl font-bold">
+    Your Peace of Mind
+    <br>
+    Is our Greatest priority
+    </h2>
+
+
+<p class="mt-6 text-gray-700 max-w-xl mx-auto">
+    Discover the latest smartphones, smart watches,
+    laptops and accessories from the world's leading brands.
+</p>
+
+<div class="mt-8">
+
+   <a href="login.html? message=Please%20sign%20in%20to%20access%20this%20feature." class="inline-block rounded-full bg-blue-600 px-6 py-3 font-semibold text-white hover:bg-blue-700">
+    Explore Products
+   </a>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- PRODUCT CARDS -->
+
+<section class="mt-20 px-10 grid md:grid-cols-4 gap-8">
+
+
+<!-- Card 1 -->
+<a href="login.html? message=Please%20sign%20in%20to%20access%20this%20feature." class="block">
+<div class="bg-blue-300 rounded-3xl p-6 transition hover:scale-105">
+
+<img 
+src="Images/Iphone 18 series.jpg"
+class="h-40 w-full object-contain rounded-xl">
+
+<h3 class="font-bold text-xl mt-5">
+    iPhone Series
+</h3>
+
+<p class="text-gray-500">
+Latest Apple smartphones
+</p>
+
+</div>
+</a>
+
+
+
+
+<!-- Card 2 -->
+<a href="login.html? message=Please%20sign%20in%20to%20access%20this%20feature." class="block">
+<div class="bg-blue-300 rounded-3xl p-6 transition hover:scale-105">
+
+<img 
+src="Images/Smartphones.jpg"
+class="h-40 w-full object-contain rounded-xl">
+
+<h3 class="font-bold text-xl mt-5">
+    Smartphones/Watches
+</h3>
+
+<p class="text-gray-500">
+Track your lifestyle
+</p>
+
+</div>
+</a>
+
+
+<!-- Card 3 -->
+
+<a href="login.html? message=Please%20sign%20in%20to%20access%20this%20feature." class="block">
+<div class="bg-blue-300 rounded-3xl p-6 transition hover:scale-105">
+<div class="h-40 w-full rounded-2xl overflow-hidden">
+<video 
+src="Images/laptop.mp4"
+autoplay
+muted 
+loop 
+playsinline 
+class="w-full h-full object-cover rounded-2xl">
+<video>
+</div>
+
+
+<h3 class="font-bold text-xl mt-5">
+    Laptops
+</h3>
+
+<p class="text-gray-500">
+Powerful everyday devices
+</p>
+
+</div>
+</a>
+
+
+
+
+
+<!-- Card 4 -->
+
+<a href="login.html? message=Please%20sign%20in%20to%20access%20this%20feature." class="block">
+<div class="bg-blue-300 rounded-3xl p-6 transition hover:scale-105">
+
+<img 
+src="Images/Accessories.jpg"
+class="h-40 w-full object-contain rounded-xl">
+
+<h3 class="font-bold text-xl mt-5">
+    Accessories
+</h3>
+
+<p class="text-gray-500">
+Ipads, Chargers, earbuds and more
+</p>
+
+</div>
+</a>
+
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white mt-16">
+
+    <div class="max-w-7xl mx-auto px-6 py-12">
+
+        <!-- Footer Content -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+            <!-- Roy Gadgets -->
+            <div>
+                <h2 class="text-2xl font-bold text-blue-500">
+                    Roy Gadgets
+                </h2>
+
+                <p class="text-gray-400 mt-4 leading-relaxed">
+                    Your trusted destination for smartphones, laptops,
+                    accessories and other electronic devices.
+                </p>
+            </div>
+
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">
+                    Quick Links
+                </h3>
+
+                <ul class="space-y-3">
+
+                    <li>
+                        <a href="index.html"
+                           class="text-gray-400 hover:text-blue-500 transition">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="login.html? message=Please%20sign%20in%20to%20access%20this%20feature."
+                           class="text-gray-400 hover:text-blue-500 transition">
+                            laptops
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="login.html? message=Please%20sign%20in%20to%20access%20this%20feature."
+                           class="text-gray-400 hover:text-blue-500 transition">
+                            Apple
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="login.html? message=Please%20sign%20in%20to%20access%20this%20feature."
+                           class="text-gray-400 hover:text-blue-500 transition">
+                            Android
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="login.html? message=Please%20sign%20in%20to%20access%20this%20feature."
+                           class="text-gray-400 hover:text-blue-500 transition">
+                            Accessories
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+
+            <!-- Customer Service -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">
+                    Customer Service
+                </h3>
+
+                <ul class="space-y-3">
+
+                    <li>
+                        <a href="https://wa.me/2349067481379"
+                           class="text-gray-400 hover:text-blue-500 transition">
+                            Contact Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#"
+                           class="text-gray-400 hover:text-blue-500 transition">
+                            Delivery Information
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#"
+                           class="text-gray-400 hover:text-blue-500 transition">
+                            Returns & Refunds
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#"
+                           class="text-gray-400 hover:text-blue-500 transition">
+                            Privacy Policy
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+
+            <!-- Follow Us -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">
+                    Follow Us
+                </h3>
+
+                <p class="text-gray-400 mb-5">
+                    Connect with Roy Gadgets on social media.
+                </p>
+
+                <div class="flex gap-4">
+
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/roys.gadgets?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw=="
+                       target="_blank"
+                       aria-label="Instagram"
+                       class="w-11 h-11 flex items-center justify-center
+                              rounded-full bg-gray-800
+                              hover:bg-blue-600 transition">
+
+                        <i class="fab fa-instagram text-xl"></i>
+
+                    </a>
+
+
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/2349067481379"
+                       target="_blank"
+                       aria-label="WhatsApp"
+                       class="w-11 h-11 flex items-center justify-center
+                              rounded-full bg-gray-800
+                              hover:bg-green-500 transition">
+
+                        <i class="fab fa-whatsapp text-xl"></i>
+
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Divider -->
+        <div class="border-t border-gray-700 mt-10 pt-6">
+
+            <div class="flex flex-col sm:flex-row
+                        items-center justify-between gap-3">
+
+                <p class="text-gray-500 text-sm text-center sm:text-left">
+                    © 2026 Roy Gadgets. All rights reserved.
+                </p>
+
+                <p class="text-gray-500 text-sm">
+                    Built with ❤️ by MARTX
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+</body>
+</html>
